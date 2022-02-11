@@ -1,0 +1,41 @@
+﻿<Window x:Class="lab.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab"
+        mc:Ignorable="d"
+        Title="DevInfo" Height="400" Width="650"
+        Icon="\\Mac\Home\Downloads\976599-all-in-one-appliances-desktop-display-electronics-pc-screen_106534.ico">
+    <Window.Background>
+        <ImageBrush ImageSource="\\Mac\Home\Downloads\Wnf38X.jpeg" Stretch="Fill" />
+    </Window.Background>
+    <Grid>
+        <Label Content="Інформація про розробника" HorizontalAlignment="Center" Margin="0,26,0,0" VerticalAlignment="Top" FontSize="35" FontFamily="Yu Gothic UI Light" Foreground="White"/>
+        <Label Content="ПІП: Небесна Анна Андріївна" HorizontalAlignment="Left" Margin="23,100,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Yu Gothic UI Semilight" Foreground="White"/>
+        <Label Content="Дата народження: 17.11.2003" HorizontalAlignment="Left" Margin="23,137,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Yu Gothic UI Semilight" Foreground="White"/>
+        <Label Content="Місце навчання: КПІ ім. Ігоря Сікорського" HorizontalAlignment="Left" Margin="23,174,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Yu Gothic UI Semilight" Foreground="White"/>
+        <Label Content="Факультет/група: ФПМ/КП-11" HorizontalAlignment="Left" Margin="23,211,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Yu Gothic UI Semilight" Foreground="White"/>
+        <Label Content="Рік створення застосунку: 2022" HorizontalAlignment="Left" Margin="23,248,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Yu Gothic UI Semilight" Foreground="White"/>
+        <Button x:Name="Exit4" Click="Exit4_Click" Content="Повернутися до головного вікна" HorizontalAlignment="Center" Margin="0,325,0,0" VerticalAlignment="Top" Width="367" Height="44" 
+                FontSize="23" FontFamily="Yu Gothic UI Semilight" BorderBrush="{x:Null}" Background="#FFD5E5FF" Foreground="#FF162D50">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Image Source = "\\Mac\Home\Downloads\1GKHbH0.png" Margin="347,118,-33,83" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Separator Height="45" HorizontalAlignment="Center" Margin="0,63,0,0" VerticalAlignment="Top" Background="#FFF8C3C4" Width="590"/>
+
+    </Grid>
+</Window>
