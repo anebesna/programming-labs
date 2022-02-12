@@ -20,6 +20,7 @@ namespace lab
     {
         private static Players current = default;
         private static int clicks;
+        private bool b = false;
         public Button[,] array = new Button[5, 5];
         public Window2()
         {
@@ -40,7 +41,7 @@ namespace lab
         
         private void Click(object obj, EventArgs e)
         {
-
+            label.Content = $"Player {current}";
             if (clicks == 0) BtnArr(array);
             Button btn = (Button)obj;
             if (current != Players.X)
@@ -57,7 +58,7 @@ namespace lab
             clicks++;
             if(clicks > 8)
             {
-                if (checkWin(array)==true)
+                if (checkWin(array))
                 {               
                     MessageBox.Show($"{current} won!");
                     for (int i = 0; i < 5; i++)
@@ -70,23 +71,17 @@ namespace lab
                 }
                 if (clicks == 25)
                 {
-                    for (int i = 0; i < 5; i++)
-                    {
-                        for (int j = 0; j < 5; j++)
-                        {
-                            array[i, j].Foreground = Brushes.Magenta;
-                        }
-                    }
                     MessageBox.Show($"Tie!");
                 }
             }
         }
         private bool checkWin(Button[,] arr)
         {
-            bool b = false;
-            int count = 0;
+            b = false;
+            int count;
             for (int i = 0; i < 5; i++)
             {
+                count = 0;
                 for (int j = 0; j < 4; j++)
                 {
                     if (arr[i, j].Content == arr[i, j + 1].Content) count++;
@@ -97,9 +92,10 @@ namespace lab
                     }
                 }
             }
-            count = 0;
+            
             for (int j = 0; j < 5; j++)
             {
+                count = 0;
                 for (int i = 0; i < 4; i++)
                 {
                     if (arr[i, j].Content == arr[i + 1, j].Content) count++;
@@ -109,19 +105,29 @@ namespace lab
             }
             count = 0;
             for (int i = 0; i < 4; i++)
-            {
-                if (arr[i, i].Content == arr[i + 1, i + 1].Content) count++;
-                else count = 0;
-                if (count == 4) b = true;                   
+            { 
+                for (int j = 0; j < 4; j++)
+                {
+                    if (i == j)
+                    {
+                        if (arr[i, i].Content == arr[i + 1, i + 1].Content) count++;
+                        else count = 0;
+                        if (count == 4) b = true;
+                    }
+                }
             }
             count = 0;
-            int k = 4;
             for (int i = 0; i < 4; i++)
-            {
-                if (arr[i, k].Content == arr[i + 1, k - 1].Content) count++;
-                else count = 0;
-                if (count == 4) b = true;
-                k--;
+            {              
+                for (int j = 4; j > 0; j--)
+                {
+                    if (i + j == 4)
+                    {
+                        if (arr[i, j].Content == arr[i + 1, j - 1].Content) count++;
+                        else count = 0;
+                        if (count == 4) b = true;
+                    }
+                }
             }
             return b;
         }
@@ -142,8 +148,10 @@ namespace lab
         }
         private void Restart_Click(object o, EventArgs e)
         {
+            label.Content = $"Player {current}";
             clicks = 0;
             current = Players.None;
+            b = false;
             for (int i = 0; i < 5; i++)
             {
                 for (int j = 0; j < 5; j++)

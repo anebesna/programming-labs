@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
+using System.Data;
 
 namespace lab
 {
@@ -50,16 +51,25 @@ namespace lab
         private void NumBtn_Click(object sender, RoutedEventArgs e)
         {
             Button b = (Button)sender;
-            tb.Text += b.Content.ToString();
+            if (tb.Text == "0") tb.Text = b.Content.ToString();
+            else
+            {
+                tb.Text += b.Content.ToString();
+            }
             num2 = double.Parse(tb.Text);
         }
         private void Btn_Click(object sender, RoutedEventArgs e)
         {
             Button b = (Button)sender;
-            tb.Text = default;
+            tb.Text = b.Content.ToString();
             operation = b.Content.ToString();
             num1 = num2;
-            num2 = default;
+            tb.Text = "0";
+        }
+        private void Dot_Click(object o, EventArgs e)
+        {
+            Button b = (Button)o;
+            tb.Text += b.Content.ToString();
         }
         private string Result()
         {
@@ -95,6 +105,7 @@ namespace lab
             if (tb.Text.Length > 0)
             {            
                 tb.Text = tb.Text[0..^1];
+                if (tb.Text == "") tb.Text = "0";
                 num2 = double.Parse(tb.Text);
             }
         }

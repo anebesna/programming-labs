@@ -26,31 +26,31 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="0" Grid.Column="0" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="0" Grid.Column="1" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="0" Grid.Column="2" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="0" Grid.Column="3" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="0" Grid.Column="4" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="1" Grid.Column="0" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="1" Grid.Column="1" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="1" Grid.Column="2" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="1" Grid.Column="3" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="1" Grid.Column="4" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="2" Grid.Column="0" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="2" Grid.Column="1" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="2" Grid.Column="2" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="2" Grid.Column="3" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="2" Grid.Column="4" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="3" Grid.Column="0" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="3" Grid.Column="1" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="3" Grid.Column="2" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="3" Grid.Column="3" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="3" Grid.Column="4" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="4" Grid.Column="0" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="4" Grid.Column="1" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="4" Grid.Column="2" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="4" Grid.Column="3" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
-            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="4" Grid.Column="4" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="White"/>
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="0" Grid.Column="0" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="0" Grid.Column="1" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="0" Grid.Column="2" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="0" Grid.Column="3" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="0" Grid.Column="4" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="1" Grid.Column="0" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="1" Grid.Column="1" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="1" Grid.Column="2" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="1" Grid.Column="3" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="1" Grid.Column="4" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="2" Grid.Column="0" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="2" Grid.Column="1" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="2" Grid.Column="2" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="2" Grid.Column="3" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="2" Grid.Column="4" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="3" Grid.Column="0" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="3" Grid.Column="1" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="3" Grid.Column="2" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="3" Grid.Column="3" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="3" Grid.Column="4" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="4" Grid.Column="0" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="4" Grid.Column="1" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="4" Grid.Column="2" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="4" Grid.Column="3" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
+            <Button Content = " " Click="Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Row="4" Grid.Column="4" FontFamily="Yu Gothic UI Light" FontSize="60" Foreground="#FF162D50" />
         </Grid>
         <Button Click ="Exit2_Click" Margin="222,516,222,0" Foreground="#FF162D50" Content="Вихід" BorderBrush="{x:Null}" Background="#FFD5E5FF" FontFamily="Yu Gothic UI Semilight" FontSize="22" Height="37" VerticalAlignment="Top">
             <Button.Resources>
@@ -66,6 +66,7 @@
                 </Style>
             </Button.Resources>
         </Button>
+        <Label Name="label" Content="" HorizontalAlignment="Left" Margin="68,8,0,0" VerticalAlignment="Top" FontFamily="Yu Gothic UI Semilight" Foreground="White" FontSize="22"/>
 
     </Grid>
 </Window>

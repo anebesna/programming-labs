@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab"
         mc:Ignorable="d"
-        Title="Calculator" Height="590" Width="400">
+        Title="Calculator" Height="590" Width="400"
+        Icon="\\Mac\Home\Downloads\976599-all-in-one-appliances-desktop-display-electronics-pc-screen_106534.ico">
     <Window.Background>
         <ImageBrush ImageSource="\\Mac\Home\Downloads\Wnf38X.jpeg" Stretch="Fill" />
     </Window.Background>
     <Grid>
         <Border BorderBrush="#FFF9C4C4" BorderThickness="1" VerticalAlignment="Top" Height="51" Margin="41,23,40,0">
-            <TextBlock x:Name="tb" HorizontalAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="0.552,0.798" Height="48" Width="299" FontSize="34" Foreground="White" FontFamily="Yu Gothic UI Semilight"/>
+            <TextBlock x:Name="tb" Text="0" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="0.552,0.798" Height="48" Width="299" FontSize="34" Foreground="White" FontFamily="Yu Gothic UI Semilight"/>
         </Border>
         <Grid  HorizontalAlignment="Center" Width="319" Height="359" VerticalAlignment="Top" Margin="0,92,0,0">
             <Grid.ColumnDefinitions>
@@ -46,7 +47,7 @@
             <Button Click ="NumBtn_Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Column="2" Grid.Row="3" Foreground="#FFFEFDFD" FontSize="30" FontFamily="Yu Gothic UI Semilight" Content="3"/>
             <Button Click ="Sign" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Column="0" Grid.Row="4" Content="+/-" FontFamily="Yu Gothic UI Semilight" FontSize="30" Foreground="#FFFEF9F9"/>
             <Button Click ="NumBtn_Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Column="1" Grid.Row="4" Content="0" FontFamily="Yu Gothic UI Semilight" FontSize="30" Foreground="#FFF8F6F6" />
-            <Button Click ="NumBtn_Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Column="2" Grid.Row="4" Foreground="#FFFAF7F7" FontFamily="Yu Gothic UI Semilight" FontSize="30" Content=","/>
+            <Button Click ="Dot_Click" BorderBrush="#FFF9C4C4" Background="{x:Null}" Grid.Column="2" Grid.Row="4" Foreground="#FFFAF7F7" FontFamily="Yu Gothic UI Semilight" FontSize="30" Content="."/>
         </Grid>
         <Button Content="Вихід" HorizontalAlignment="Center" Margin="0,470,0,0" VerticalAlignment="Top" Background="#FFD5E5FF" Foreground="#FF162D50" FontFamily="Yu Gothic UI Semilight" FontSize="26" BorderBrush="{x:Null}" Width="132" Click="Exit3_Click">
             <Button.Resources>
