@@ -1,0 +1,43 @@
+﻿<Window x:Class="practice.StudyModeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practice"
+        mc:Ignorable="d"
+        Title="Вікно режиму навчання" Height="450" Width="500"
+        Icon="\\Mac\Home\Downloads\keyboard_4316.ico">
+    <Grid Height="450" MaxWidth="0" MinHeight="460" MinWidth="510" MaxHeight="0" Margin="-10,-9,0,-17">
+        <Grid.Background>
+            <ImageBrush ImageSource="\\Mac\Home\Downloads\QCWw1E.jpeg"/>
+        </Grid.Background>
+        <Label Content="Режим навчання" Margin="114,2,114,0" VerticalAlignment="Top" 
+               FontSize="36" FontFamily="Yu Gothic UI Light"/>
+        <Separator Background="White" Margin="22,68,22,0" VerticalAlignment="Top"/>
+        <Label Content="Кодове слово: " HorizontalAlignment="Left" Margin="35,81,0,0" VerticalAlignment="Top"
+               FontSize="26" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBlock Margin="223,86,0,0" Text="чебупели" TextWrapping="Wrap" 
+                   VerticalAlignment="Top" FontSize="26" Foreground="#FF70B4C1" FontFamily="Yu Gothic UI Semilight" HorizontalAlignment="Left" Width="119"/>
+        <Label Content="Кількість введених символів: " Margin="35,134,118,0" FontSize="26" FontFamily="Yu Gothic UI Semilight" Height="45" VerticalAlignment="Top"/>
+        <Label x:Name="SymbolCount" Content="0" HorizontalAlignment="Left" Margin="381,134,0,0" 
+               VerticalAlignment="Top" RenderTransformOrigin="0.487,0.534" FontSize="26" FontFamily="Yu Gothic UI Semilight"/>
+        <Label Content="Поле для введення:" HorizontalAlignment="Left" Margin="35,189,0,0" 
+               VerticalAlignment="Top" FontSize="26" FontFamily="Yu Gothic UI Semilight"/>
+        <TextBox KeyDown="TB_KeyDown" x:Name="InputField" HorizontalAlignment="Left" Margin="41,239,0,0" 
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="261" Height="35" BorderBrush="White" BorderThickness="1" 
+                Control.Background="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="24"/>
+        <Label Content="Кількість спроб: " HorizontalAlignment="Left" Margin="35,290,0,0" VerticalAlignment="Top" 
+               FontSize="26" FontFamily="Yu Gothic UI Semilight"/>
+        <ComboBox Name="TriesBox" HorizontalAlignment="Left" Margin="240,303,0,0" VerticalAlignment="Top" Width="52" SelectionChanged="TriesBox_SelectionChanged">
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+        </ComboBox>
+        <Button Content="Вийти з режиму" HorizontalAlignment="Left" Margin="282,363,0,0" VerticalAlignment="Top" 
+                Height="47" Width="196" BorderBrush="White" BorderThickness="1" Background="{x:Null}" 
+                FontFamily="Yu Gothic UI Semilight" Click="CloseStudyMode_Click" FontSize="22" x:Name="CloseStudyMode"/>
+
+    </Grid>
+</Window>
