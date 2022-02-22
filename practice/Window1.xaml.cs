@@ -106,6 +106,7 @@ namespace practice
                 }
                 S = Math.Sqrt(S);
                 t = Math.Abs((intervals[i].TotalSeconds - M) / S / Math.Sqrt(intervals.Count - 1));
+                
                 if (t > 2.57)
                 {
                     check = false;

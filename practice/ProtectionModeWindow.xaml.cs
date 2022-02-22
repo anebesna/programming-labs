@@ -98,14 +98,20 @@ namespace practice
                 InputField.IsEnabled = false;
                 if (x1 > x2) DispField.Content = "oднорідні";
                 else DispField.Content = "неoднорідні";
-                StatisticsBlock.Content = $"{Math.Round(r / (buf*lines), 3)}";
-                P1Field.Content = $"{Math.Round((buf - p1) / buf, 3)}";
-                P2Field.Content = $"{Math.Round(p1 / buf, 3)}";
+                double P = Math.Round(r / (buf * lines), 3);
+                StatisticsBlock.Content = $"{P}";
+                if (check) P1Field.Content = $"{Math.Round(1 - P, 3)}";
+                else P2Field.Content = $"{Math.Round(1-P,3)}";
             }
         }
+        bool check;
+        private void checkBox_Checked(object sender, RoutedEventArgs e)
+        {
+            check = true;
+        }
+
         double r = 0;
         int lines;
-        double p1 = 0;
         private void MakeStat()
         {
             double M = 0;
@@ -130,7 +136,6 @@ namespace practice
                 double[] Me = new double[lines];
                 double[] Se = new double[lines];
                 string line;
-                bool success = false;
                 int i = 0;
                 while ((line = sr.ReadLine()) != null)
                 {
@@ -148,14 +153,8 @@ namespace practice
                     else x1++;
                     Sf = Math.Sqrt((Se[j] + S) * (intervals.Count - 1) / (2 * intervals.Count - 1));
                     t = Math.Abs(Me[j] - M) / (Sf * Math.Sqrt(2.0 / intervals.Count));
-                    if (t < tt)
-                    {
-                        r++;
-                        success = true;
-                    }
-                    
+                    if (t < tt) r++;
                 }
-                if (success) p1++;
             }
         }
     }
