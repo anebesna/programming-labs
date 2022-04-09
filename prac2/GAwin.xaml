@@ -16,7 +16,7 @@
             </Border.Effect>
         </Border>
         <Canvas x:Name="MyCanvas" Margin="28,29,0,0" Height="360" VerticalAlignment="Top" HorizontalAlignment="Left" Width="431"/>
-        <Button Click ="Exit" Margin="589,413,115,0" Foreground="#FF0C738C" Content="Exit" BorderBrush="{x:Null}" Background="#FF21252B" FontFamily="Yu Gothic UI Semilight" FontSize="22" Height="35" VerticalAlignment="Top" Opacity="0.9">
+        <Button Click ="Exit" Margin="589,411,115,0" Foreground="#FF0C738C" Content="Exit" BorderBrush="{x:Null}" Background="#FF21252B" FontFamily="Yu Gothic UI Semilight" FontSize="22" Height="35" VerticalAlignment="Top" Opacity="0.9">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -620,7 +620,7 @@
                 <DropShadowEffect BlurRadius="25"/>
             </Border.Effect>
         </Border>
-        <Button Click ="Stop_Click" Margin="197,413,507,0" Foreground="#FF3F4086" Content="Pause" BorderBrush="{x:Null}" Background="#FF21252B" FontFamily="Yu Gothic UI Semilight" FontSize="22" Height="35" VerticalAlignment="Top" Opacity="0.9">
+        <Button Click ="Stop_Click" Margin="197,411,507,0" Foreground="#FF3F4086" Content="Pause" BorderBrush="{x:Null}" Background="#FF21252B" FontFamily="Yu Gothic UI Semilight" FontSize="22" Height="35" VerticalAlignment="Top" Opacity="0.9">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -630,7 +630,7 @@
                 <DropShadowBitmapEffect Color="Black" Direction="310" ShadowDepth="5" Opacity="1" Softness="0.7" />
             </Button.BitmapEffect>
         </Button>
-        <Button Click ="Start_Click" Margin="70,413,634,0" Foreground="#FF3F4086" Content="Start" BorderBrush="{x:Null}" Background="#FF21252B" FontFamily="Yu Gothic UI Semilight" FontSize="22" Height="35" VerticalAlignment="Top" Opacity="0.9">
+        <Button Click ="Start_Click" Margin="70,411,634,0" Foreground="#FF3F4086" Content="Start" BorderBrush="{x:Null}" Background="#FF21252B" FontFamily="Yu Gothic UI Semilight" FontSize="22" Height="35" VerticalAlignment="Top" Opacity="0.9">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -640,7 +640,7 @@
                 <DropShadowBitmapEffect Color="Black" Direction="310" ShadowDepth="5" Opacity="1" Softness="0.7" />
             </Button.BitmapEffect>
         </Button>
-        <Button Click ="Resume_Click" Margin="324,413,380,0" Foreground="#FF3F4086" Content="Resume" BorderBrush="{x:Null}" Background="#FF21252B" FontFamily="Yu Gothic UI Semilight" FontSize="22" Height="35" VerticalAlignment="Top" Opacity="0.9">
+        <Button Click ="Resume_Click" Margin="324,411,380,0" Foreground="#FF3F4086" Content="Resume" BorderBrush="{x:Null}" Background="#FF21252B" FontFamily="Yu Gothic UI Semilight" FontSize="22" Height="35" VerticalAlignment="Top" Opacity="0.9">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -658,7 +658,7 @@
         <Label Content="Current dist:" FontFamily="Yu Gothic UI Semilight" FontSize="18" Height="38" VerticalAlignment="Top" HorizontalAlignment="Left" Width="158" Margin="528,338,0,0" Foreground="#FF292B43"/>
         <TextBox TextChanged="pops_TextChanged" Name="pops" HorizontalAlignment="Left" Height="24" FontFamily="Yu Gothic UI Semilight" FontSize="18" Margin="634,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="86" Background="{x:Null}" BorderBrush="#FF3F4086" Foreground="#FF292B43"/>
         <TextBox TextChanged="Mrate_TextChanged" Name="Mrate" HorizontalAlignment="Left" Height="26" FontFamily="Yu Gothic UI Semilight" FontSize="18" Margin="648,262,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="72" Background="{x:Null}" BorderBrush="#FF3F4086" Foreground="#FF292B43"/>
-        <TextBox TextChanged="maxgens_TextChanged" Name="maxgens" HorizontalAlignment="Left" FontFamily="Yu Gothic UI Semilight" FontSize="18" Margin="671,316,0,0" TextWrapping="Wrap" Text="" Width="49" Background="{x:Null}" BorderBrush="#FF3F4086" Foreground="#FF292B43" Height="26" VerticalAlignment="Top"/>
+        <TextBox TextChanged="maxgens_TextChanged" Name="maxgens" HorizontalAlignment="Left" FontFamily="Yu Gothic UI Semilight" FontSize="18" Margin="671,318,0,0" TextWrapping="Wrap" Text="" Width="49" Background="{x:Null}" BorderBrush="#FF3F4086" Foreground="#FF292B43" Height="25" VerticalAlignment="Top"/>
         <TextBox Name="cdist" HorizontalAlignment="Left" Height="26" FontFamily="Yu Gothic UI Semilight" FontSize="18" Margin="634,344,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="86" Background="{x:Null}" BorderBrush="#FF3F4086" Foreground="#FF292B43" IsEnabled="False"/>
         <TextBox Name="gens" HorizontalAlignment="Left" FontFamily="Yu Gothic UI Semilight" FontSize="18" Margin="659,290,0,0" TextWrapping="Wrap" Text="" Width="61" Background="{x:Null}" BorderBrush="#FF3F4086" Foreground="#FF292B43" Height="26" VerticalAlignment="Top" IsEnabled="False"/>
     </Grid>

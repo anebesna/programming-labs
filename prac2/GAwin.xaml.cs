@@ -33,7 +33,6 @@ namespace prac2
         static int maxg;
         static List<int[]> offspring = new List<int[]>();
         static List<double> dists = new List<double>();
-        //    Dictionary<int[], double> fitnessdict = new Dictionary<int[], double>();
 
         public GAwin()
         {
@@ -173,12 +172,10 @@ namespace prac2
                 offspring.Add(pop[i]);
                 dists.Add(CalcRoute(pop[i]));
             }
-            //Fitness();
         }
         private void Fitness()
         {
             double dist;
-            //fitnessdict.Clear();
             for(int i = 0; i < population; i++)
             {
                 dist = CalcRoute(pop[i]);
@@ -189,8 +186,7 @@ namespace prac2
                     bestWay.Content = Math.Round(bestdist, 3);
                     bestOrder = pop[i];
                 }
-                fitness[i] = 1 / dist;
-                //fitnessdict.Add(pop[i], fitness[i]);
+               // fitness[i] = 1 / dist;
             }
         }
         private void Normalize()
@@ -243,29 +239,29 @@ namespace prac2
             for(int i = 0; i < population-1; i++)
             {
                 int[] wayA, wayB;
-                //int p1 = rnd.Next(population);
-                //int p2 = rnd.Next(population);
-                //while (p1 == p2) p2 = rnd.Next(population);
-                if (rnd.NextDouble() > 0.5)
-                {
-                    wayA = tournament_selection(population / 2);
-                    wayB = tournament_selection(population / 2);
-                    while (wayA == wayB) wayB = tournament_selection(population / 2);
-                    offspring[i] = wayA;
-                    dists[i] = CalcRoute(wayA);
-                    current = wayA;
-                }
-                else
-                {
-                    Normalize();
-                    wayA = PickWay();
-                    wayB = PickWay();
-                    while (wayA == wayB) wayB = PickWay();
-                    offspring[i] = wayB;
-                    dists[i] = CalcRoute(wayB);
-                    current = wayB;
-                }
-                (wayA, wayB) = Crossover(wayA, wayB);
+                int p1 = rnd.Next(population);
+                int p2 = rnd.Next(population);
+                while (p1 == p2) p2 = rnd.Next(population);
+                //if (rnd.NextDouble() > 0.5)
+                //{
+                //    wayA = tournament_selection(population / 2);
+                //    wayB = tournament_selection(population / 2);
+                //    while (wayA == wayB) wayB = tournament_selection(population / 2);
+                //    offspring[i] = wayA;
+                //    dists[i] = CalcRoute(wayA);
+                //    current = wayA;
+                //}
+                //else
+                //{
+                //    Normalize();
+                //    wayA = PickWay();
+                //    wayB = PickWay();
+                //    while (wayA == wayB) wayB = PickWay();
+                //    offspring[i] = wayB;
+                //    dists[i] = CalcRoute(wayB);
+                //    current = wayB;
+                //}
+                (wayA, wayB) = Crossover(pop[p1], pop[p2]);
                 offspring.Add(mutate(wayA));
                 dists.Add(CalcRoute(wayA));
                 cdist.Text = Math.Round(CalcRoute(wayA), 3).ToString();
@@ -274,15 +270,6 @@ namespace prac2
                 dists.Add(CalcRoute(wayB));
                 cdist.Text = Math.Round(CalcRoute(wayB), 3).ToString();
                 current = wayB;
-                //offspring[i+1] = wayB;
-                //dists[i + 1] = CalcRoute(wayB);
-
-                
-
-                //(wayA, wayB) = Crossover(wayA, wayB);
-                //offspring.Add(wayA);
-                //offspring.Add(wayB);
-                // newpop[i] = mutate(Crossover(wayA, wayB));
             }
 
             Array.Sort<int>(indx, (a, b) => dists[a].CompareTo(dists[b]));
@@ -291,21 +278,9 @@ namespace prac2
             {
                 pop[i] = offspring[indx[i]];
             }
-            bestOrder = pop[0];
-            bestWay.Content = Math.Round(CalcRoute(bestOrder), 3).ToString();
             dists = dists.Take(population).ToList();
             offspring = pop.ToList();
-            //pop = offspring;
-            //Fitness();
-            //fitnessdict = fitnessdict.OrderByDescending(u => u.Value).ToDictionary(z => z.Key, y => y.Value);
-            //int m = 0;
-            //for(int i = 0; i < population; i++)
-            //{
-            //    pop[i] = fitnessdict.ElementAt(m).Key;
-            //    m++;
-            //}
-            //pop = pop.Take(population).ToList();
-            // pop = newpop;
+            Fitness();
             genscount++;
 
         }
@@ -330,24 +305,21 @@ namespace prac2
             }
             A = wayAstart.ToArray();
             B = wayBstart.ToArray();
-            //CalcRoute(A) < CalcRoute(B) ? A : B;
-            
             return (A, B);
         }
         private int[] mutate(int[] way)
         {
             Random rnd = new Random();
-            int point = rnd.Next(PointCount - 1);
-            var inverse = way.Skip(point).Reverse().ToList();
+            int point = rnd.Next(PointCount);
+            int amount = rnd.Next(PointCount);
             int i1, i2, tmp;
-            int j = 0;
             if (rnd.NextDouble() < 0.5)
             {
-                for (int i = point; i < PointCount; i++)
+                if (point < amount)
                 {
-                    way[i] = inverse[j];
-                    j++;
+                    Array.Reverse(way, point, PointCount - amount);
                 }
+                else Array.Reverse(way, amount, PointCount - point);
             }
             else
             {
@@ -360,7 +332,6 @@ namespace prac2
                     way[i1] = way[i2];
                     way[i2] = tmp;
                 }
-
             }
             return way;
         }
@@ -392,15 +363,12 @@ namespace prac2
             InitPoints();
             InitPolygon();
             InitbestPolygon();
-            fitness = new double[population];
-            //         pop = new List<int[]>();
             dists = new List<double>();
             offspring = new List<int[]>();
             CreatePopulation();
             CBpoints.IsEnabled = false;
             CBspeed.IsEnabled = false;
             genscount = 0;
-            fitness = new double[population * 2];
             dT.Start();
         }
 
@@ -418,7 +386,7 @@ namespace prac2
 
         private void maxgens_TextChanged(object sender, TextChangedEventArgs e)
         {
-            maxg = int.Parse(maxgens.Text);
+           maxg = int.Parse(maxgens.Text);
         }
 
         private void Resume_Click(object sender, RoutedEventArgs e)
