@@ -1,0 +1,54 @@
+﻿<Window x:Class="practice3.Dev_win"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practice3"
+        mc:Ignorable="d"
+        Title="Dev_win" Height="450" Width="850">
+    <Window.Background>
+        <ImageBrush ImageSource="\\Mac\Home\Downloads\back.jpeg" Stretch="Fill" />
+    </Window.Background>
+    <Grid>
+        <Border CornerRadius="15,15,15,15" Background="#FFEFE9E4" Margin="503,149,0,0" Opacity="0.65" Height="39" VerticalAlignment="Top" HorizontalAlignment="Left" Width="318"/>
+        <Border CornerRadius="15,15,15,15" Background="#FFEFE9E4" Margin="21,274,0,0" Opacity="0.65" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="433"/>
+
+        <Border CornerRadius="15,15,15,15" Background="#FFEFE9E4" Margin="21,233,0,0" Opacity="0.65" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="433"/>
+
+        <Border CornerRadius="15,15,15,15" Background="#FFEFE9E4" Margin="21,192,0,0" Opacity="0.65" Height="39" VerticalAlignment="Top" HorizontalAlignment="Left" Width="427"/>
+
+        <Border CornerRadius="15,15,15,15" Background="#FFEFE9E4" Margin="21,151,0,0" Opacity="0.65" Height="39" VerticalAlignment="Top" HorizontalAlignment="Left" Width="433"/>
+
+        <Border CornerRadius="15,15,15,15" Background="#FF324182" Margin="0,23,0,0" Height="43" VerticalAlignment="Top" HorizontalAlignment="Center" Width="312"/>
+        <Border CornerRadius="15,15,15,15" Background="#FF4658A4" Margin="69,86,0,0" Height="43" VerticalAlignment="Top" HorizontalAlignment="Left" Width="336"/>
+        <Label Content="Інформація" HorizontalAlignment="Center" Margin="0,12,0,0" VerticalAlignment="Top" FontSize="35" FontFamily="Yu Gothic UI Light" Foreground="#FFFDF2E7"/>
+        <Label Content="ПІП: Небесна Анна Андріївна" HorizontalAlignment="Left" Margin="21,150,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Yu Gothic UI Semilight" Foreground="#FF324182" Height="41" Width="302"/>
+        <Label Content="Дата народження: 17.11.2003" HorizontalAlignment="Left" Margin="21,191,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Yu Gothic UI Semilight" Foreground="#FF324182" Height="41" Width="292"/>
+        <Label Content="Місце навчання: КПІ ім. Ігоря Сікорського" HorizontalAlignment="Left" Margin="21,232,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Yu Gothic UI Semilight" Foreground="#FF324182" Height="42" Width="427"/>
+        <Label Content="Факультет/група: ФПМ/КП-11" HorizontalAlignment="Left" Margin="21,274,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Yu Gothic UI Semilight" Foreground="#FF324182" Height="41" Width="297"/>
+        <Label Content="Рік створення застосунку: 2022" HorizontalAlignment="Left" Margin="503,148,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Yu Gothic UI Semilight" Foreground="#FF324182" Height="41" Width="318"/>
+        <Button Click="toMain" Content="Закрити вікно" FontFamily="Yu Gothic UI Semilight" FontSize="22" HorizontalAlignment="Center" Margin="0,351,0,0"  Background="#FF324182" BorderBrush="{x:Null}" Foreground="#FFFFF3EA" VerticalAlignment="Top" Height="39" Width="216">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="Про розробника" HorizontalAlignment="Left" Margin="103,76,0,0" VerticalAlignment="Top" FontSize="35" FontFamily="Yu Gothic UI Light" Foreground="#FFFDF2E7"/>
+        <Border CornerRadius="15,15,15,15" Background="#FF4658A4" Margin="503,87,0,0" Height="43" VerticalAlignment="Top" HorizontalAlignment="Left" Width="317"/>
+        <Label Content="Про застосунок" HorizontalAlignment="Left" Margin="537,76,0,0" VerticalAlignment="Top" FontSize="35" FontFamily="Yu Gothic UI Light" Foreground="#FFFDF2E7"/>
+        <Border CornerRadius="15,15,15,15" Background="#FFEFE9E4" Margin="503,191,0,0" Opacity="0.65" Height="39" VerticalAlignment="Top" HorizontalAlignment="Left" Width="317"/>
+        <Label Content="Прив'язана СУБД: PostgreSQL" HorizontalAlignment="Left" Margin="502,190,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Yu Gothic UI Semilight" Foreground="#FF324182" Height="41" Width="318"/>
+        <Border CornerRadius="15,15,15,15" Background="#FFEFE9E4" Margin="503,233,0,0" Opacity="0.65" Height="39" VerticalAlignment="Top" HorizontalAlignment="Left" Width="317"/>
+        <Label  Content="Кількість користувачів: " HorizontalAlignment="Left" Margin="502,232,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Yu Gothic UI Semilight" Foreground="#FF324182" Height="41" Width="318"/>
+        <Label Name="label" Content="" HorizontalAlignment="Left" Margin="738,233,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Yu Gothic UI Semilight" Foreground="#FF324182" Height="41" Width="82"/>
+        <Image Source="\\Mac\Home\Downloads\cat3.png" HorizontalAlignment="Left" Height="566" Margin="165,80,0,0" VerticalAlignment="Top" Width="564" RenderTransformOrigin="0.5,0.5"/>
+        <Button Content="" Click="toMain" FontFamily="Yu Gothic UI Semilight" FontSize="23" HorizontalAlignment="Center" Margin="0,353,0,0" VerticalAlignment="Top" Height="37" Width="214" Background="White" BorderBrush="{x:Null}" Foreground="{x:Null}" Opacity="0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
