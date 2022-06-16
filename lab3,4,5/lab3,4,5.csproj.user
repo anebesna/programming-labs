@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AuditLog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Connections.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CurrentState.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Healthcard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MedInterventions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MedOrg.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MedStaff.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Patients.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Queries.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Queries2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Query_9.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Staff.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AuditLog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Connections.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CurrentState.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Healthcard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MedInterventions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MedOrg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MedStaff.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Patients.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Queries.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Queries2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Query_9.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Staff.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

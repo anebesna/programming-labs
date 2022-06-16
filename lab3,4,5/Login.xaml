@@ -1,0 +1,49 @@
+﻿<Window x:Class="lab3_4_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab3_4_5"
+        mc:Ignorable="d"
+        Title="Login" Height="500" Width="400"
+        Icon="\\Mac\Home\Downloads\med.ico">
+    <Grid>
+        <Border Margin="54,259,52,0" BorderThickness="0" CornerRadius="10" Background="White" Height="59" VerticalAlignment="Top">
+            <Border.Effect>
+                <DropShadowEffect Opacity="0.6" BlurRadius="15" Direction="15"/>
+            </Border.Effect>
+        </Border>
+        <Border Margin="54,172,54,0" BorderThickness="0" CornerRadius="10" Background="White" Height="61" VerticalAlignment="Top">
+            <Border.Effect>
+                <DropShadowEffect Opacity="0.6" Direction="15" BlurRadius="15"/>
+            </Border.Effect>
+        </Border>
+
+        <Image Source="\\Mac\Home\Downloads\lock.png" HorizontalAlignment="Center" Height="72" Margin="0,27,0,0" VerticalAlignment="Top" Width="72" RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Авторизація" HorizontalAlignment="Center" Margin="0,104,0,0" VerticalAlignment="Top" Height="52" Width="154" FontFamily="Yu Gothic UI Semilight" FontSize="26"/>
+        <Image Source="\\Mac\Home\Downloads\user.png" HorizontalAlignment="Left" Height="50" Margin="76,177,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.5,0.5" />
+        <TextBox x:Name="login" Margin="143,180,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" HorizontalAlignment="Left" Width="173" FontFamily="Yu Gothic UI Semilight" FontSize="23" BorderBrush="#FFDD3333">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Image Source="\\Mac\Home\Downloads\key (1).png" HorizontalAlignment="Left" Height="48" Margin="78,264,0,0" VerticalAlignment="Top" Width="51" RenderTransformOrigin="0.5,0.5"/>
+        <PasswordBox x:Name="password" Margin="143,267,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource roundcornerpassword}" VerticalAlignment="Top" Height="44" HorizontalAlignment="Left" Width="173" FontSize="23"  BorderBrush="#FFDD3333"/>
+        <Button Click="toMenu" Content="Увійти" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40" Width="184" BorderBrush="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="20" Background="#FFDD3333" Foreground="White" Margin="0,356,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Click="exit" Content="Вихід" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40" Width="114" BorderBrush="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="20" Background="#FF80BBCE" Foreground="White" Margin="0,411,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

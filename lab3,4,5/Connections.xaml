@@ -1,0 +1,245 @@
+﻿<Window x:Class="lab3_4_5.Connections"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab3_4_5"
+        mc:Ignorable="d"
+        Title="Connections" Height="560" Width="1200"
+        Icon="\\Mac\Home\Downloads\med.ico">
+    <Window.Resources>
+        <Style x:Key="ComboBoxTest2" TargetType="{x:Type ComboBox}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <ToggleButton Grid.Column="2" Focusable="false" IsChecked="{Binding Path=IsDropDownOpen,Mode=TwoWay,RelativeSource={RelativeSource TemplatedParent}}" >
+                                <ToggleButton.Template>
+                                    <ControlTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="5*" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Border x:Name="Border"  Grid.ColumnSpan="2" CornerRadius="5" Background="#FF80BBCE" BorderBrush="{x:Null}" BorderThickness="1" />
+                                            <Border Grid.Column="0" CornerRadius="5,0,0,5"  Margin="1"  Background='White'  BorderBrush="#FFDD3333" BorderThickness="1" />
+                                            <Path x:Name="Arrow" Grid.Column="1"  Fill="#FFDD3333" HorizontalAlignment="Center" VerticalAlignment="Center" Data="M 0 0 L 4 4 L 8 0 Z"/>
+                                        </Grid>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="ToggleButton.IsMouseOver" Value="true">
+                                                <Setter TargetName="Border" Property="Background" Value="#FFD6D4E9" />
+                                            </Trigger>
+                                            <Trigger Property="ToggleButton.IsChecked" Value="true">
+                                                <Setter TargetName="Border" Property="Background" Value="#FFD6D4E9" />
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </ToggleButton.Template>
+                            </ToggleButton>
+                            <ContentPresenter Name="ContentSite" IsHitTestVisible="False"  Content="{TemplateBinding SelectionBoxItem}" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" Margin="3"  />
+                            <TextBox x:Name="PART_EditableTextBox" Visibility="Hidden" IsReadOnly="{TemplateBinding IsReadOnly}"/>
+                            <Popup Name="Popup" Placement="Bottom" IsOpen="{TemplateBinding IsDropDownOpen}" AllowsTransparency="True"  Focusable="False" PopupAnimation="Slide">
+                                <Grid  Name="DropDown" SnapsToDevicePixels="True" MinWidth="{TemplateBinding ActualWidth}" MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                                    <Border x:Name="DropDownBorder" Background="#FFD6D4E9" />
+                                    <ScrollViewer SnapsToDevicePixels="True">
+                                        <StackPanel IsItemsHost="True" />
+                                    </ScrollViewer>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <ComboBox x:Name="doc1" Style="{StaticResource ComboBoxTest2}" DisplayMemberPath="fullname" HorizontalAlignment="Left" Margin="203,24,0,0" VerticalAlignment="Top" Width="181" Height="36" BorderBrush="{x:Null}" Foreground="#FF324182" FontSize="20"/>
+        <Label Content="Співробітник:" HorizontalAlignment="Left" Margin="31,22,0,0" VerticalAlignment="Top" Height="40" Width="208" FontFamily="Yu Gothic UI Semilight" FontSize="20"/>
+        <ComboBox x:Name="dep1" Style="{StaticResource ComboBoxTest2}" DisplayMemberPath="name" HorizontalAlignment="Left" Margin="165,103,0,0" VerticalAlignment="Top" Width="219" Height="36" BorderBrush="{x:Null}" Foreground="#FF324182" FontSize="20"/>
+        <Label Content="Відділення:" HorizontalAlignment="Left" Margin="31,101,0,0" VerticalAlignment="Top" Height="40" Width="208" FontFamily="Yu Gothic UI Semilight" FontSize="20"/>
+        <Button x:Name="add1" Click="Add1" Content="Додати" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="153" BorderBrush="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="20" Background="#FFDD3333" Foreground="White" Margin="32,198,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Click="Delete1" Content="Видалити" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="153" BorderBrush="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="20" Background="#FFDD3333" Foreground="White" Margin="231,198,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+
+                </Style>
+            </Button.Resources>
+        </Button>
+        <DataGrid  AutoGeneratingColumn="OnAutoGeneratingColumn" x:Name="db1"  Margin="32,258,0,0" FontFamily="Yu Gothic UI Semilight" FontSize="18" BorderBrush="#FFDD3333" Height="243" VerticalAlignment="Top" HorizontalAlignment="Left" Width="352">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGrid}">
+                    <Setter Property="Background" Value="#FFFFFFFF"/>
+                </Style>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <Setter Property="Background" Value="#FF80BBCE"/>
+                </Style>
+                <Style TargetType="{x:Type DataGridRowHeader}">
+                    <Setter Property="Background" Value="#FF324182"/>
+                </Style>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="#FFDD3333"/>
+                </Style>
+                <Style TargetType="{x:Type Button}" x:Key="{ComponentResourceKey ResourceId=DataGridSelectAllButtonStyle, TypeInTargetAssembly={x:Type DataGrid}}">
+                    <Setter Property="Background" Value="#FF7169DF" />
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Effect>
+                <DropShadowEffect Opacity="0.4" Direction="0" BlurRadius="15"/>
+            </DataGrid.Effect>
+        </DataGrid>
+        <ComboBox x:Name="patient1" Style="{StaticResource ComboBoxTest2}" DisplayMemberPath="fullname" HorizontalAlignment="Left" Margin="589,24,0,0" VerticalAlignment="Top" Width="180" Height="36" BorderBrush="{x:Null}" Foreground="#FF324182" FontSize="20"/>
+        <Label Content="Пацієнт:" HorizontalAlignment="Left" Margin="418,22,0,0" VerticalAlignment="Top" Height="40" Width="207" FontFamily="Yu Gothic UI Semilight" FontSize="20"/>
+        <ComboBox x:Name="doc2" Style="{StaticResource ComboBoxTest2}" DisplayMemberPath="fullname" HorizontalAlignment="Left" Margin="589,66,0,0" VerticalAlignment="Top" Width="180" Height="36" BorderBrush="{x:Null}" Foreground="#FF324182" FontSize="20"/>
+        <Label Content="Співробітник:" HorizontalAlignment="Left" Margin="418,64,0,0" VerticalAlignment="Top" Height="40" Width="207" FontFamily="Yu Gothic UI Semilight" FontSize="20"/>
+        <Button x:Name="add2" Click="Add2" Content="Додати" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="152" BorderBrush="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="20" Background="#FFDD3333" Foreground="White" Margin="419,155,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Click="Delete2" Content="Видалити" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="152" BorderBrush="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="20" Background="#FFDD3333" Foreground="White" Margin="617,155,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+
+                </Style>
+            </Button.Resources>
+        </Button>
+        <DataGrid x:Name="db2" Margin="419,214,0,0" FontFamily="Yu Gothic UI Semilight" FontSize="18" BorderBrush="#FFDD3333" Height="243" VerticalAlignment="Top" HorizontalAlignment="Left" Width="350">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGrid}">
+                    <Setter Property="Background" Value="#FFFFFFFF"/>
+                </Style>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <Setter Property="Background" Value="#FF80BBCE"/>
+                </Style>
+                <Style TargetType="{x:Type DataGridRowHeader}">
+                    <Setter Property="Background" Value="#FF324182"/>
+                </Style>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="#FFDD3333"/>
+                </Style>
+                <Style TargetType="{x:Type Button}" x:Key="{ComponentResourceKey ResourceId=DataGridSelectAllButtonStyle, TypeInTargetAssembly={x:Type DataGrid}}">
+                    <Setter Property="Background" Value="#FF7169DF" />
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Effect>
+                <DropShadowEffect Opacity="0.4" Direction="0" BlurRadius="15"/>
+            </DataGrid.Effect>
+        </DataGrid>
+        <ComboBox Name="patient2" Style="{StaticResource ComboBoxTest2}" DisplayMemberPath="fullname" HorizontalAlignment="Left" Margin="974,22,0,0" VerticalAlignment="Top" Width="180" Height="36" BorderBrush="{x:Null}" Foreground="#FF324182" FontSize="20"/>
+        <Label Content="Пацієнт:" HorizontalAlignment="Left" Margin="803,20,0,0" VerticalAlignment="Top" Height="40" Width="207" FontFamily="Yu Gothic UI Semilight" FontSize="20"/>
+        <ComboBox Name="doc3" Style="{StaticResource ComboBoxTest2}" DisplayMemberPath="fullname" HorizontalAlignment="Left" Margin="974,64,0,0" VerticalAlignment="Top" Width="180" Height="36" BorderBrush="{x:Null}" Foreground="#FF324182" FontSize="20"/>
+        <Label Content="Співробітник:" HorizontalAlignment="Left" Margin="803,62,0,0" VerticalAlignment="Top" Height="40" Width="207" FontFamily="Yu Gothic UI Semilight" FontSize="20"/>
+        <Label Content="Тип операції:" HorizontalAlignment="Left" Margin="804,106,0,0" VerticalAlignment="Top" Height="44" Width="251" FontFamily="Yu Gothic UI Semilight" FontSize="20"/>
+        <TextBox x:Name="type" Margin="974,106,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" HorizontalAlignment="Left" Width="180" FontFamily="Yu Gothic UI Semilight" FontSize="23" BorderBrush="#FFDD3333">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="Результат:" HorizontalAlignment="Left" Margin="804,150,0,0" VerticalAlignment="Top" Height="44" Width="251" FontFamily="Yu Gothic UI Semilight" FontSize="20"/>
+        <TextBox x:Name="result" Margin="974,150,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" HorizontalAlignment="Left" Width="180" FontFamily="Yu Gothic UI Semilight" FontSize="23" BorderBrush="#FFDD3333">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="Видалити за id операції:" HorizontalAlignment="Left" Margin="804,243,0,0" VerticalAlignment="Top" Height="49" Width="251" FontFamily="Yu Gothic UI Semilight" FontSize="20"/>
+        <TextBox x:Name="idoperation" Margin="1032,243,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" HorizontalAlignment="Left" Width="69" FontFamily="Yu Gothic UI Semilight" FontSize="20" BorderBrush="#FFDD3333">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <ComboBox Name="doc4" Style="{StaticResource ComboBoxTest2}" DisplayMemberPath="fullname" HorizontalAlignment="Left" Margin="974,311,0,0" VerticalAlignment="Top" Width="180" Height="36" BorderBrush="{x:Null}" Foreground="#FF324182" FontSize="20"/>
+        <Label Content="Співробітник:" HorizontalAlignment="Left" Margin="803,309,0,0" VerticalAlignment="Top" Height="40" Width="207" FontFamily="Yu Gothic UI Semilight" FontSize="20"/>
+        <Button x:Name="add4" Click="Add4"  Content="Додати" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="136" BorderBrush="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="20" Background="#FFDD3333" Foreground="White" Margin="830,403,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Click="Delete4" Content="Видалити" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="143" BorderBrush="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="20" Background="#FFDD3333" Foreground="White" Margin="990,403,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="Видалити за id відпустки:" HorizontalAlignment="Left" Margin="804,449,0,0" VerticalAlignment="Top" Height="49" Width="251" FontFamily="Yu Gothic UI Semilight" FontSize="20"/>
+        <TextBox x:Name="idvacation" Margin="1046,451,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" HorizontalAlignment="Left" Width="61" FontFamily="Yu Gothic UI Semilight" FontSize="20" BorderBrush="#FFDD3333">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <DatePicker Name="hire_date" HorizontalAlignment="Left" Margin="208,150,0,0" VerticalAlignment="Top" Height="36" Width="176" BorderBrush="#FFDD3333" FirstDayOfWeek="Monday" IsDropDownOpen="False" SelectedDateFormat="Short" FontSize="19"/>
+        <Label Content="Дата найму:" HorizontalAlignment="Left" Margin="32,146,0,0" VerticalAlignment="Top" Height="49" Width="216" FontFamily="Yu Gothic UI Semilight" FontSize="20" RenderTransformOrigin="0.491,0.817"/>
+        <DatePicker Name="start" HorizontalAlignment="Left" Margin="896,355,0,0" VerticalAlignment="Top" Height="36" Width="84" BorderBrush="#FFDD3333" FirstDayOfWeek="Monday" IsDropDownOpen="False" SelectedDateFormat="Short" FontSize="19"/>
+        <Label Content="Початок:" HorizontalAlignment="Left" Margin="804,351,0,0" VerticalAlignment="Top" Height="49" Width="102" FontFamily="Yu Gothic UI Semilight" FontSize="20" RenderTransformOrigin="0.491,0.817"/>
+        <DatePicker Name="end" HorizontalAlignment="Left" Margin="1064,355,0,0" VerticalAlignment="Top" Height="36" Width="90" BorderBrush="#FFDD3333" FirstDayOfWeek="Monday" IsDropDownOpen="False" SelectedDateFormat="Short" FontSize="19" RenderTransformOrigin="-0.058,0.584"/>
+        <Label Content="Кінець:" HorizontalAlignment="Left" Margin="984,351,0,0" VerticalAlignment="Top" Height="49" Width="97" FontFamily="Yu Gothic UI Semilight" FontSize="20" RenderTransformOrigin="0.491,0.817"/>
+        <Button Click="toMain" Content="До головного меню" HorizontalAlignment="Center" VerticalAlignment="Top" Height="43" Width="210" BorderBrush="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="20" Background="#FF80BBCE" Foreground="White" Margin="0,478,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Separator Background="#FF80BBCE" Margin="804,294,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="350"/>
+        <Label Content="Заклад:" HorizontalAlignment="Left" Margin="32,61,0,0" VerticalAlignment="Top" Height="40" Width="82" FontFamily="Yu Gothic UI Semilight" FontSize="20"/>
+        <ComboBox x:Name="hospital1" DropDownClosed="SelectedHospital" Style="{StaticResource ComboBoxTest2}" DisplayMemberPath="name" HorizontalAlignment="Left" Margin="119,63,0,0" VerticalAlignment="Top" Width="265" Height="36" FontFamily="Yu Gothic UI Semilight" BorderBrush="{x:Null}" Foreground="Black" FontSize="20"/>
+        <Label Content="Заклад:" HorizontalAlignment="Left" Margin="419,105,0,0" VerticalAlignment="Top" Height="40" Width="82" FontFamily="Yu Gothic UI Semilight" FontSize="20"/>
+        <ComboBox x:Name="hospital2" Style="{StaticResource ComboBoxTest2}" DisplayMemberPath="name" HorizontalAlignment="Left" Margin="504,107,0,0" VerticalAlignment="Top" Width="265" Height="36" FontFamily="Yu Gothic UI Semilight" BorderBrush="{x:Null}" Foreground="Black" FontSize="20"/>
+        <Button x:Name="add3" Click="Add3"  Content="Додати" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="136" BorderBrush="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="20" Background="#FFDD3333" Foreground="White" Margin="828,198,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Click="Delete3" Content="Видалити" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="144" BorderBrush="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="20" Background="#FFDD3333" Foreground="White" Margin="990,198,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Click="deleteId1" Content="✓" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="45" BorderBrush="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="20" Background="#FFDD3333" Foreground="White" Margin="1109,243,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Click="deleteId2" Content="✓" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="45" BorderBrush="{x:Null}" FontFamily="Yu Gothic UI Semilight" FontSize="20" Background="#FFDD3333" Foreground="White" Margin="1114,451,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
