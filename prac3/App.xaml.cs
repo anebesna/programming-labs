@@ -31,18 +31,5 @@ namespace practice3
             wnd.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             wnd.Show();
         }
-        //private static void TestConnection()
-        //{
-        //    using(NpgsqlConnection con = GetConnection())
-        //    {
-        //        if(con.State = ConnectionState.Open)
-        //        {
-        //            Console.WriteLine("Connected!");
-        //        }
-        //    }
-        //}
-        //private static NpgsqlConnection GetConnection()
-        //{
-        //    return new NpgsqlConnection(@"Server=localhost;Port=5432;User Id=postgres;Password=wolikesh;Database=prac3;");        }
     }
 }
