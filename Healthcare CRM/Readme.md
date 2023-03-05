@@ -17,15 +17,17 @@ In the window HealthCard doctors can find the medical history of the particular 
 Also there is an audit log to track who used the CRM at the partiular time. And obviously there is a log in window to authenticate the user.
 
 Windows with Query... name are additional tasks where you can perform next actions:
-1. Queries: 
-  1) Obtain a list and total number of doctors of a specific specialty for a particular medical institution, hospital, or clinic, or for all medical facilities in the city.
-  2) Obtain a list and total number of supporting personnel of a specific specialty for a particular medical institution, hospital, or clinic, or for all medical facilities in the city.
-  3) Obtain a list and total number of doctors of a specific specialty who have performed at least a certain number of operations for a particular medical institution, hospital, or clinic, or for all medical facilities in the city.
-  4) Obtain a list and total number of doctors of a specific specialty whose work experience is at least a certain duration for a particular medical institution, hospital, or clinic, or for all medical facilities in the city.
-  5) Obtain a list and total number of doctors of a specific specialty with a candidate or doctorate degree in medical science, or with the title of associate professor or professor, for a particular medical institution, hospital, or clinic, or for all medical facilities in the city.
-2. Queries2:
-  1) Get a list of patients from the specified hospital, department, or specific ward of the department, with the date of admission, condition, temperature, and attending physician specified.
-  2) Get a list of patients who underwent inpatient treatment at the specified hospital or with a specific doctor for a certain period of time.
-  3) Get a list of patients being observed by a doctor of the specified profile at a specific clinic.
-3. Query_9:
-  1) Get the total number of wards, beds of the specified hospital overall and per each department, as well as the number of available beds in each department and the number of fully vacant wards.
+<ol>
+  <li>Queries: 
+    <ul><li>Obtain a list and total number of doctors of a specific specialty for a particular medical institution, hospital, or clinic, or for all medical facilities in the city.</li>
+    <li>Obtain a list and total number of supporting personnel of a specific specialty for a particular medical institution, hospital, or clinic, or for all medical facilities in the city.</li>
+    <li>Obtain a list and total number of doctors of a specific specialty who have performed at least a certain number of operations for a particular medical institution, hospital, or clinic, or for all medical facilities in the city.</li>
+    <li>Obtain a list and total number of doctors of a specific specialty whose work experience is at least a certain duration for a particular medical institution, hospital, or clinic, or for all medical facilities in the city.</li>
+    <li>Obtain a list and total number of doctors of a specific specialty with a candidate or doctorate degree in medical science, or with the title of associate professor or professor, for a particular medical institution, hospital, or clinic, or for all medical facilities in the city.</li></ul></li>
+  <li>Queries2:<ul>
+  <li>Get a list of patients from the specified hospital, department, or specific ward of the department, with the date of admission, condition, temperature, and attending physician specified.</li>
+  <li>Get a list of patients who underwent inpatient treatment at the specified hospital or with a specific doctor for a certain period of time.</li>
+  <li>Get a list of patients being observed by a doctor of the specified profile at a specific clinic.</li></ul></li>
+<li>Query_9:<ul>
+  <li>Get the total number of wards, beds of the specified hospital overall and per each department, as well as the number of available beds in each department and the number of fully vacant wards.</li></ul></li>
+  </ol>
