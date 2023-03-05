@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{B725D091-353D-4280-BB42-17C527D739E9}|Default">
+  <MonoDevelop.Ide.ItemProperties.chain PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="chain/UAH500Handler.cs">
+    <Files>
+      <File FileName="chain/MoneyHandler.cs" Line="8" Column="1" />
+      <File FileName="chain/UAH200Handler.cs" />
+      <File FileName="chain/UAH100Handler.cs" />
+      <File FileName="chain/UAH50Handler.cs" />
+      <File FileName="chain/UAH500Handler.cs" Line="18" Column="18" />
+      <File FileName="chain/ATM.cs" Line="15" Column="13" />
+      <File FileName="chain/CombinationException.cs" Line="8" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="chain" expanded="True">
+            <Node name="chain" expanded="True">
+              <Node name="UAH500Handler.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="chain" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

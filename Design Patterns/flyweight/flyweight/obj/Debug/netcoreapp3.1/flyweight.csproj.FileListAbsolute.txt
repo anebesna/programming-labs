@@ -1,0 +1,13 @@
+/Users/anebesna/Projects/flyweight/flyweight/obj/Debug/netcoreapp3.1/flyweight.csproj.AssemblyReference.cache
+/Users/anebesna/Projects/flyweight/flyweight/obj/Debug/netcoreapp3.1/flyweight.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anebesna/Projects/flyweight/flyweight/obj/Debug/netcoreapp3.1/flyweight.AssemblyInfoInputs.cache
+/Users/anebesna/Projects/flyweight/flyweight/obj/Debug/netcoreapp3.1/flyweight.AssemblyInfo.cs
+/Users/anebesna/Projects/flyweight/flyweight/obj/Debug/netcoreapp3.1/flyweight.csproj.CoreCompileInputs.cache
+/Users/anebesna/Projects/flyweight/flyweight/bin/Debug/netcoreapp3.1/flyweight.deps.json
+/Users/anebesna/Projects/flyweight/flyweight/bin/Debug/netcoreapp3.1/flyweight.runtimeconfig.json
+/Users/anebesna/Projects/flyweight/flyweight/bin/Debug/netcoreapp3.1/flyweight.runtimeconfig.dev.json
+/Users/anebesna/Projects/flyweight/flyweight/bin/Debug/netcoreapp3.1/flyweight.dll
+/Users/anebesna/Projects/flyweight/flyweight/bin/Debug/netcoreapp3.1/flyweight.pdb
+/Users/anebesna/Projects/flyweight/flyweight/obj/Debug/netcoreapp3.1/flyweight.dll
+/Users/anebesna/Projects/flyweight/flyweight/obj/Debug/netcoreapp3.1/flyweight.pdb
+/Users/anebesna/Projects/flyweight/flyweight/obj/Debug/netcoreapp3.1/flyweight.genruntimeconfig.cache

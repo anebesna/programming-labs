@@ -1,0 +1,13 @@
+/Users/anebesna/Projects/state/state/obj/Debug/netcoreapp3.1/state.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anebesna/Projects/state/state/obj/Debug/netcoreapp3.1/state.AssemblyInfoInputs.cache
+/Users/anebesna/Projects/state/state/obj/Debug/netcoreapp3.1/state.AssemblyInfo.cs
+/Users/anebesna/Projects/state/state/obj/Debug/netcoreapp3.1/state.csproj.CoreCompileInputs.cache
+/Users/anebesna/Projects/state/state/bin/Debug/netcoreapp3.1/state.deps.json
+/Users/anebesna/Projects/state/state/bin/Debug/netcoreapp3.1/state.runtimeconfig.json
+/Users/anebesna/Projects/state/state/bin/Debug/netcoreapp3.1/state.runtimeconfig.dev.json
+/Users/anebesna/Projects/state/state/bin/Debug/netcoreapp3.1/state.dll
+/Users/anebesna/Projects/state/state/bin/Debug/netcoreapp3.1/state.pdb
+/Users/anebesna/Projects/state/state/obj/Debug/netcoreapp3.1/state.dll
+/Users/anebesna/Projects/state/state/obj/Debug/netcoreapp3.1/state.pdb
+/Users/anebesna/Projects/state/state/obj/Debug/netcoreapp3.1/state.genruntimeconfig.cache
+/Users/anebesna/Projects/state/state/obj/Debug/netcoreapp3.1/state.csproj.AssemblyReference.cache

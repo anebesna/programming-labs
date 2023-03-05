@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{E7256487-D22E-47E0-9503-301DFBDB0053}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="builder/Director.cs">
+    <Files>
+      <File FileName="builder/Computer.cs" Line="21" Column="14" />
+      <File FileName="builder/IComputerBuilder.cs" Line="12" Column="1" />
+      <File FileName="builder/MiddlePriseComputerBuilder.cs" />
+      <File FileName="builder/HighPriseComputerBuilder.cs" />
+      <File FileName="builder/Director.cs" Line="7" Column="10" />
+      <File FileName="builder/CPU.cs" />
+      <File FileName="builder/SSD.cs" />
+      <File FileName="builder/HDD.cs" />
+      <File FileName="builder/RAM.cs" />
+      <File FileName="builder/Motherboard.cs" />
+      <File FileName="builder/PSU.cs" />
+      <File FileName="builder/Component.cs" />
+      <File FileName="builder/Client.cs" Line="30" Column="17" />
+      <File FileName="builder/LowPriceComputerBuilder.cs" />
+      <File FileName="builder/GraphicsCard.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="builder" expanded="True">
+            <Node name="builder" expanded="True">
+              <Node name="Director.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="builder" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.builder PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

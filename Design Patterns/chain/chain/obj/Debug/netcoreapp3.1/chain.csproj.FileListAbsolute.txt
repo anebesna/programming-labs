@@ -1,0 +1,13 @@
+/Users/anebesna/Projects/chain/chain/obj/Debug/netcoreapp3.1/chain.csproj.AssemblyReference.cache
+/Users/anebesna/Projects/chain/chain/obj/Debug/netcoreapp3.1/chain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anebesna/Projects/chain/chain/obj/Debug/netcoreapp3.1/chain.AssemblyInfoInputs.cache
+/Users/anebesna/Projects/chain/chain/obj/Debug/netcoreapp3.1/chain.AssemblyInfo.cs
+/Users/anebesna/Projects/chain/chain/obj/Debug/netcoreapp3.1/chain.csproj.CoreCompileInputs.cache
+/Users/anebesna/Projects/chain/chain/bin/Debug/netcoreapp3.1/chain.deps.json
+/Users/anebesna/Projects/chain/chain/bin/Debug/netcoreapp3.1/chain.runtimeconfig.json
+/Users/anebesna/Projects/chain/chain/bin/Debug/netcoreapp3.1/chain.runtimeconfig.dev.json
+/Users/anebesna/Projects/chain/chain/bin/Debug/netcoreapp3.1/chain.dll
+/Users/anebesna/Projects/chain/chain/bin/Debug/netcoreapp3.1/chain.pdb
+/Users/anebesna/Projects/chain/chain/obj/Debug/netcoreapp3.1/chain.dll
+/Users/anebesna/Projects/chain/chain/obj/Debug/netcoreapp3.1/chain.pdb
+/Users/anebesna/Projects/chain/chain/obj/Debug/netcoreapp3.1/chain.genruntimeconfig.cache

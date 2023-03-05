@@ -1,0 +1,12 @@
+/Users/anebesna/Projects/abstract_factory/abstract_factory/bin/Debug/netcoreapp3.1/abstract_factory.deps.json
+/Users/anebesna/Projects/abstract_factory/abstract_factory/bin/Debug/netcoreapp3.1/abstract_factory.runtimeconfig.json
+/Users/anebesna/Projects/abstract_factory/abstract_factory/bin/Debug/netcoreapp3.1/abstract_factory.runtimeconfig.dev.json
+/Users/anebesna/Projects/abstract_factory/abstract_factory/bin/Debug/netcoreapp3.1/abstract_factory.dll
+/Users/anebesna/Projects/abstract_factory/abstract_factory/bin/Debug/netcoreapp3.1/abstract_factory.pdb
+/Users/anebesna/Projects/abstract_factory/abstract_factory/obj/Debug/netcoreapp3.1/abstract_factory.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anebesna/Projects/abstract_factory/abstract_factory/obj/Debug/netcoreapp3.1/abstract_factory.AssemblyInfoInputs.cache
+/Users/anebesna/Projects/abstract_factory/abstract_factory/obj/Debug/netcoreapp3.1/abstract_factory.AssemblyInfo.cs
+/Users/anebesna/Projects/abstract_factory/abstract_factory/obj/Debug/netcoreapp3.1/abstract_factory.csproj.CoreCompileInputs.cache
+/Users/anebesna/Projects/abstract_factory/abstract_factory/obj/Debug/netcoreapp3.1/abstract_factory.dll
+/Users/anebesna/Projects/abstract_factory/abstract_factory/obj/Debug/netcoreapp3.1/abstract_factory.pdb
+/Users/anebesna/Projects/abstract_factory/abstract_factory/obj/Debug/netcoreapp3.1/abstract_factory.genruntimeconfig.cache

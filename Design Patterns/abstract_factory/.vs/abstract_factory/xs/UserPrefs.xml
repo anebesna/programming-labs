@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{BEC8F1AB-315E-432A-905A-839C8076B405}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="abstract_factory/Production.cs">
+    <Files>
+      <File FileName="abstract_factory/ManualCleaningVacuum.cs" Line="11" Column="1" />
+      <File FileName="abstract_factory/RobotVacuum.cs" Line="8" Column="1" />
+      <File FileName="abstract_factory/PortableCarVacuum.cs" />
+      <File FileName="abstract_factory/DryCleaningFactory.cs" Line="25" Column="6" />
+      <File FileName="abstract_factory/CleaningFactory.cs" Line="11" Column="1" />
+      <File FileName="abstract_factory/DryCleaningRobotVacuum.cs" />
+      <File FileName="abstract_factory/DryWetCleaningRobotVacuum.cs" />
+      <File FileName="abstract_factory/DryCleaningManualVacuum.cs" />
+      <File FileName="abstract_factory/DryWetCleaningManualVacuum.cs" />
+      <File FileName="abstract_factory/DryCleaningPortableCarVacuum.cs" />
+      <File FileName="abstract_factory/DryWetCleaningPortableCarVacuum.cs" />
+      <File FileName="abstract_factory/Production.cs" Line="18" Column="1" />
+      <File FileName="abstract_factory/DryWetCleaningFactory.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="abstract_factory" expanded="True">
+            <Node name="abstract_factory" expanded="True">
+              <Node name="Production.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="abstract_factory" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.abstract__factory PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

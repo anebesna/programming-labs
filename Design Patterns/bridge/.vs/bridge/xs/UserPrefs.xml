@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{C61CD68E-910C-4C7E-B4B0-D8E615E27FA3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="bridge/Strings.ua.resx">
+    <Files>
+      <File FileName="bridge/Program.cs" Line="14" Column="6" />
+      <File FileName="bridge/SystemMessage.cs" Line="15" Column="1" />
+      <File FileName="bridge/ErrorWarning.cs" Line="12" Column="1" />
+      <File FileName="bridge/InfoWindow.cs" Line="4" Column="1" />
+      <File FileName="bridge/DialogWindow.cs" Line="4" Column="1" />
+      <File FileName="bridge/Language.cs" Line="9" Column="10" />
+      <File FileName="bridge/English.cs" Line="12" Column="10" />
+      <File FileName="bridge/Ukrainian.cs" Line="6" Column="28" />
+      <File FileName="bridge/German.cs" Line="6" Column="25" />
+      <File FileName="bridge/User.cs" Line="6" Column="48" />
+      <File FileName="bridge/Strings.en.Designer.cs" Line="1" Column="1" />
+      <File FileName="bridge/Strings.en.resx" Line="15" Column="1" />
+      <File FileName="bridge/Strings.de.resx" Line="22" Column="67" />
+      <File FileName="bridge/Strings.ua.resx" Line="21" Column="28" />
+      <File FileName="bridge/EmptyXmlFile.xml" Line="25" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="bridge" expanded="True">
+            <Node name="bridge" expanded="True">
+              <Node name="Strings.ua.resx" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="bridge" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.bridge PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

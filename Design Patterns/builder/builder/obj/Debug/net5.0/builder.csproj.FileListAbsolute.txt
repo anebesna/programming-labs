@@ -1,0 +1,15 @@
+/Users/anebesna/Projects/builder/builder/bin/Debug/net5.0/builder.deps.json
+/Users/anebesna/Projects/builder/builder/bin/Debug/net5.0/builder.runtimeconfig.json
+/Users/anebesna/Projects/builder/builder/bin/Debug/net5.0/builder.runtimeconfig.dev.json
+/Users/anebesna/Projects/builder/builder/bin/Debug/net5.0/builder.dll
+/Users/anebesna/Projects/builder/builder/bin/Debug/net5.0/ref/builder.dll
+/Users/anebesna/Projects/builder/builder/bin/Debug/net5.0/builder.pdb
+/Users/anebesna/Projects/builder/builder/obj/Debug/net5.0/builder.csproj.AssemblyReference.cache
+/Users/anebesna/Projects/builder/builder/obj/Debug/net5.0/builder.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anebesna/Projects/builder/builder/obj/Debug/net5.0/builder.AssemblyInfoInputs.cache
+/Users/anebesna/Projects/builder/builder/obj/Debug/net5.0/builder.AssemblyInfo.cs
+/Users/anebesna/Projects/builder/builder/obj/Debug/net5.0/builder.csproj.CoreCompileInputs.cache
+/Users/anebesna/Projects/builder/builder/obj/Debug/net5.0/builder.dll
+/Users/anebesna/Projects/builder/builder/obj/Debug/net5.0/ref/builder.dll
+/Users/anebesna/Projects/builder/builder/obj/Debug/net5.0/builder.pdb
+/Users/anebesna/Projects/builder/builder/obj/Debug/net5.0/builder.genruntimeconfig.cache

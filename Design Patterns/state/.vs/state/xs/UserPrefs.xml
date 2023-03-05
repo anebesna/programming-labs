@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{39ACCDFC-DDFD-43B6-8EB0-A860A32D04F8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="state/Person.cs">
+    <Files>
+      <File FileName="state/State.cs" Line="9" Column="1" />
+      <File FileName="state/Product.cs" Line="19" Column="30" />
+      <File FileName="state/Harmful.cs" Line="18" Column="46" />
+      <File FileName="state/Healthy.cs" Line="20" Column="1" />
+      <File FileName="state/Person.cs" Line="21" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="state" expanded="True">
+            <Node name="state" expanded="True">
+              <Node name="Person.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="state" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.state PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

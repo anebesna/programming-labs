@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{7EF252AB-C023-4D8A-A7BF-57A437E80D6B}|Default">
+  <MonoDevelop.Ide.ItemProperties.flyweight PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="flyweight/Program.cs">
+    <Files>
+      <File FileName="flyweight/Rook.cs" Line="12" Column="1" />
+      <File FileName="flyweight/Queen.cs" />
+      <File FileName="flyweight/King.cs" Line="12" Column="1" />
+      <File FileName="flyweight/PieceFactory.cs" Line="32" Column="16" />
+      <File FileName="flyweight/Piece.cs" Line="13" Column="15" />
+      <File FileName="flyweight/Knight.cs" />
+      <File FileName="flyweight/Program.cs" Line="34" Column="10" />
+      <File FileName="flyweight/Pawn.cs" />
+      <File FileName="flyweight/Bishop.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="flyweight" expanded="True">
+            <Node name="flyweight" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="flyweight" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
