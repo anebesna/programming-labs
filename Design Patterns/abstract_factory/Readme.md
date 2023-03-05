@@ -1,0 +1,1 @@
+Task: using a design pattern, implement switching of production lines to manufacture different types of vacuum cleaners: handheld vacuum cleaners, robot vacuum cleaners, and portable car vacuum cleaners. There are two types of each of these types of vacuum cleaners: dry cleaning only and dry/wet cleaning.
