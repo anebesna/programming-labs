@@ -1,0 +1,1 @@
+Task: using a design pattern, replicate the process of consuming a certain product. This product has a defined shelf life. If the shelf life is exceeded, the product becomes harmful to human health. If the product is used before its shelf life has expired (i.e., when the product is still useful), there is no threat to the consumer's health.
